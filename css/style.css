@@ -1,0 +1,43 @@
+/* An outer wrapper to hold all of our charts. */
+/* Needs a 'relative' position so that the absolute position has an container to obey */
+.charts-here {
+	position: relative; /* Relative position !! */
+	height: 600px;
+}
+
+/* Common styles for all three of our chart containers */
+/* Hide all of them by default with `display: none;` */
+/* We'll use javascript to hide and show them when buttons get clicked */
+.chart-container {
+	display: none;
+	position: absolute; /* Absolute position !! */
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+/* Common styles for all three of our charts */
+.chart-container .chart {
+  height: 500px;
+  width: 100%;
+}
+
+/* Common styles for all three of our charts */
+.chart-one {
+	display: block;
+}
+
+/* Some styles unique to each chart. */
+.chart-one .chart {
+	background-color: green;
+}
+
+.chart-two .chart {
+	background-color: orange;
+}
+
+.chart-three .chart {
+	background-color: pink;	
+}
+
+
