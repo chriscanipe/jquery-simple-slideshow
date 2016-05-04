@@ -15,6 +15,13 @@ $(".btn").on("click", function() {
 	$(".chart-container."+chartName).fadeIn();
 
 
+	/* Remove the active class from all of the buttons. */
+	$(".btn").removeClass("active");
+
+	/* Add the active class to the one we just clicked */
+	$(this).addClass("active");
+
+
 });
 
 
